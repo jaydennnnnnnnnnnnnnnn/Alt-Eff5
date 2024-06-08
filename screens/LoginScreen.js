@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useFonts } from 'expo-font';
 import { Text, View, Image, SafeAreaView, ActivityIndicator, TextInput, TouchableOpacity } from 'react-native';
 import CheckBox from '@react-native-community/checkbox'; // Import CheckBox correctly
-import styles from './EcoShopper/Styles/Styles';
+import styles from './Styles/Styles';
 
 
 const localImage = require('./logo.jpeg');
