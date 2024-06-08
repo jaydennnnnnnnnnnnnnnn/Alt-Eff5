@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\venge\\OneDrive\\Desktop\\Alt-Eff5-main\\Alt-Eff5-1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\venge\\OneDrive\\Desktop\\Alt-Eff5-main\\Alt-Eff5-1\\App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\venge\\OneDrive\\Desktop\\Alt-Eff5-main\\Alt-Eff5-1\\Styles\\Styles.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Styles\\Styles.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\venge\\OneDrive\\Desktop\\Alt-Eff5-main\\Alt-Eff5-1\\screens\\LoginScreen.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -13,6 +13,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\venge\\OneDrive\\Desktop\\Alt-Eff5-main\\Alt-Eff5-1\\screens\\HomeScreen.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:screens\\HomeScreen.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\venge\\OneDrive\\Desktop\\Alt-Eff5-main\\Alt-Eff5-1\\App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\venge\\OneDrive\\Desktop\\Alt-Eff5-main\\Alt-Eff5-1\\screens\\BoilerPlate.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:screens\\BoilerPlate.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\venge\\OneDrive\\Desktop\\Alt-Eff5-main\\Alt-Eff5-1\\EcoShopper\\screens\\LoginScreen.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -25,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\venge\\OneDrive\\Desktop\\Alt-Eff5-main\\Alt-Eff5-1\\EcoShopper\\screens\\HomeScreen.js||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EcoShopper\\screens\\HomeScreen.js||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\venge\\OneDrive\\Desktop\\Alt-Eff5-main\\Alt-Eff5-1\\EcoShopper\\Styles\\Styles.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EcoShopper\\Styles\\Styles.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,17 +42,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "App.js",
               "DocumentMoniker": "C:\\Users\\venge\\OneDrive\\Desktop\\Alt-Eff5-main\\Alt-Eff5-1\\App.js",
               "RelativeDocumentMoniker": "App.js",
               "ToolTip": "C:\\Users\\venge\\OneDrive\\Desktop\\Alt-Eff5-main\\Alt-Eff5-1\\App.js",
               "RelativeToolTip": "App.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAATAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-06-08T14:35:31.008Z",
               "IsPinned": true,
@@ -62,10 +66,44 @@
               "RelativeDocumentMoniker": "screens\\LoginScreen.js",
               "ToolTip": "C:\\Users\\venge\\OneDrive\\Desktop\\Alt-Eff5-main\\Alt-Eff5-1\\screens\\LoginScreen.js",
               "RelativeToolTip": "screens\\LoginScreen.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAhAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-06-08T15:45:20.714Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BoilerPlate.js",
+              "DocumentMoniker": "C:\\Users\\venge\\OneDrive\\Desktop\\Alt-Eff5-main\\Alt-Eff5-1\\screens\\BoilerPlate.js",
+              "RelativeDocumentMoniker": "screens\\BoilerPlate.js",
+              "ToolTip": "C:\\Users\\venge\\OneDrive\\Desktop\\Alt-Eff5-main\\Alt-Eff5-1\\screens\\BoilerPlate.js",
+              "RelativeToolTip": "screens\\BoilerPlate.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-08T16:04:30.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Styles.js",
+              "DocumentMoniker": "C:\\Users\\venge\\OneDrive\\Desktop\\Alt-Eff5-main\\Alt-Eff5-1\\Styles\\Styles.js",
+              "RelativeDocumentMoniker": "Styles\\Styles.js",
+              "ToolTip": "C:\\Users\\venge\\OneDrive\\Desktop\\Alt-Eff5-main\\Alt-Eff5-1\\Styles\\Styles.js",
+              "RelativeToolTip": "Styles\\Styles.js",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAAsAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-08T15:53:32.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
               "$type": "Document",
@@ -81,16 +119,8 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "HomeScreen.js",
               "DocumentMoniker": "C:\\Users\\venge\\OneDrive\\Desktop\\Alt-Eff5-main\\Alt-Eff5-1\\EcoShopper\\screens\\HomeScreen.js",
               "RelativeDocumentMoniker": "EcoShopper\\screens\\HomeScreen.js",
@@ -102,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "BoilerPlate.js",
               "DocumentMoniker": "C:\\Users\\venge\\OneDrive\\Desktop\\Alt-Eff5-main\\Alt-Eff5-1\\EcoShopper\\screens\\BoilerPlate.js",
               "RelativeDocumentMoniker": "EcoShopper\\screens\\BoilerPlate.js",
@@ -114,19 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Styles.js",
-              "DocumentMoniker": "C:\\Users\\venge\\OneDrive\\Desktop\\Alt-Eff5-main\\Alt-Eff5-1\\EcoShopper\\Styles\\Styles.js",
-              "RelativeDocumentMoniker": "EcoShopper\\Styles\\Styles.js",
-              "ToolTip": "C:\\Users\\venge\\OneDrive\\Desktop\\Alt-Eff5-main\\Alt-Eff5-1\\EcoShopper\\Styles\\Styles.js",
-              "RelativeToolTip": "EcoShopper\\Styles\\Styles.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-06-08T14:39:36.632Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "LoginScreen.js",
               "DocumentMoniker": "C:\\Users\\venge\\OneDrive\\Desktop\\Alt-Eff5-main\\Alt-Eff5-1\\EcoShopper\\screens\\LoginScreen.js",
               "RelativeDocumentMoniker": "EcoShopper\\screens\\LoginScreen.js",
@@ -134,8 +152,7 @@
               "RelativeToolTip": "EcoShopper\\screens\\LoginScreen.js",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-06-08T14:27:34.678Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-08T14:27:34.678Z"
             }
           ]
         }

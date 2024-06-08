@@ -5,7 +5,7 @@ import CheckBox from '@react-native-community/checkbox'; // Import CheckBox corr
 import styles from './Styles/Styles';
 
 
-const localImage = require('./logo.jpeg');
+const localImage = require('./assets/logo.jpeg');
 
 const LoginScreen = ({ navigation }) => {
     const [fontsLoaded] = useFonts({

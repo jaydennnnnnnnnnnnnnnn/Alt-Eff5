@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\EcoShopper",
+    "\\screens"
   ],
-  "SelectedNode": "\\App.js",
+  "SelectedNode": "\\Styles",
   "PreviewInSolutionExplorer": false
 }
