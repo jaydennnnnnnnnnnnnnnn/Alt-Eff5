@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, ScrollView, Image, TouchableOpacity, StyleSheet } from 'react-native';
 
-const GroceryScreen = () => {
+const GroceryScreen = ({ navigation }) => {
     return (
         <ScrollView>
             <View style={styles.container}>
@@ -20,7 +20,7 @@ const GroceryScreen = () => {
                     <TouchableOpacity style={styles.button}>
                         <Text style={styles.buttonText}>Go to Website</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.button}>
+                    <TouchableOpacity onPress={() => navigation.navigate('QRCodeScanner')} style={styles.button}>
                         <Text style={styles.buttonText}>Select this Store</Text>
                     </TouchableOpacity>
                 </View>
