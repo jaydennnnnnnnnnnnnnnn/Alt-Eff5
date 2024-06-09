@@ -3,16 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\venge\\OneDrive\\Desktop\\Projects\\Coding\\EcoShopper\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\venge\\OneDrive\\Desktop\\Projects\\Coding\\EcoShopper\\Styles\\Styles.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Styles\\Styles.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\venge\\OneDrive\\Desktop\\Projects\\Coding\\EcoShopper\\screens\\HomeScreen.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:screens\\HomeScreen.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\venge\\OneDrive\\Desktop\\Projects\\Coding\\EcoShopper\\App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\venge\\OneDrive\\Desktop\\Projects\\Coding\\EcoShopper\\screens\\FavouriteScreen.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:screens\\FavouriteScreen.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\venge\\OneDrive\\Desktop\\Projects\\Coding\\EcoShopper\\screens\\CompanyScreen.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:screens\\CompanyScreen.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\venge\\OneDrive\\Desktop\\Projects\\Coding\\EcoShopper\\screens\\CheckoutScreen.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:screens\\CheckoutScreen.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\venge\\OneDrive\\Desktop\\Projects\\Coding\\EcoShopper\\screens\\BusinessLoginScreen.js||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:screens\\BusinessLoginScreen.js||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\venge\\OneDrive\\Desktop\\Projects\\Coding\\EcoShopper\\screens\\LoginScreen.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:screens\\LoginScreen.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\venge\\OneDrive\\Desktop\\Projects\\Coding\\EcoShopper\\App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:App.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\venge\\OneDrive\\Desktop\\Projects\\Coding\\EcoShopper\\Styles\\Styles.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Styles\\Styles.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,20 +42,85 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "Styles.js",
               "DocumentMoniker": "C:\\Users\\venge\\OneDrive\\Desktop\\Projects\\Coding\\EcoShopper\\Styles\\Styles.js",
               "RelativeDocumentMoniker": "Styles\\Styles.js",
               "ToolTip": "C:\\Users\\venge\\OneDrive\\Desktop\\Projects\\Coding\\EcoShopper\\Styles\\Styles.js",
               "RelativeToolTip": "Styles\\Styles.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAGAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAADEAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-06-08T19:20:55.18Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BusinessLoginScreen.js",
+              "DocumentMoniker": "C:\\Users\\venge\\OneDrive\\Desktop\\Projects\\Coding\\EcoShopper\\screens\\BusinessLoginScreen.js",
+              "RelativeDocumentMoniker": "screens\\BusinessLoginScreen.js",
+              "ToolTip": "C:\\Users\\venge\\OneDrive\\Desktop\\Projects\\Coding\\EcoShopper\\screens\\BusinessLoginScreen.js",
+              "RelativeToolTip": "screens\\BusinessLoginScreen.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-09T03:16:28.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CheckoutScreen.js",
+              "DocumentMoniker": "C:\\Users\\venge\\OneDrive\\Desktop\\Projects\\Coding\\EcoShopper\\screens\\CheckoutScreen.js",
+              "RelativeDocumentMoniker": "screens\\CheckoutScreen.js",
+              "ToolTip": "C:\\Users\\venge\\OneDrive\\Desktop\\Projects\\Coding\\EcoShopper\\screens\\CheckoutScreen.js",
+              "RelativeToolTip": "screens\\CheckoutScreen.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-09T03:15:44.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CompanyScreen.js",
+              "DocumentMoniker": "C:\\Users\\venge\\OneDrive\\Desktop\\Projects\\Coding\\EcoShopper\\screens\\CompanyScreen.js",
+              "RelativeDocumentMoniker": "screens\\CompanyScreen.js",
+              "ToolTip": "C:\\Users\\venge\\OneDrive\\Desktop\\Projects\\Coding\\EcoShopper\\screens\\CompanyScreen.js",
+              "RelativeToolTip": "screens\\CompanyScreen.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-09T03:15:21.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FavouriteScreen.js",
+              "DocumentMoniker": "C:\\Users\\venge\\OneDrive\\Desktop\\Projects\\Coding\\EcoShopper\\screens\\FavouriteScreen.js",
+              "RelativeDocumentMoniker": "screens\\FavouriteScreen.js",
+              "ToolTip": "C:\\Users\\venge\\OneDrive\\Desktop\\Projects\\Coding\\EcoShopper\\screens\\FavouriteScreen.js",
+              "RelativeToolTip": "screens\\FavouriteScreen.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-09T03:14:12.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeScreen.js",
+              "DocumentMoniker": "C:\\Users\\venge\\OneDrive\\Desktop\\Projects\\Coding\\EcoShopper\\screens\\HomeScreen.js",
+              "RelativeDocumentMoniker": "screens\\HomeScreen.js",
+              "ToolTip": "C:\\Users\\venge\\OneDrive\\Desktop\\Projects\\Coding\\EcoShopper\\screens\\HomeScreen.js",
+              "RelativeToolTip": "screens\\HomeScreen.js",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwB8AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-09T03:13:48.084Z",
               "EditorCaption": ""
             },
             {
@@ -48,26 +133,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "LoginScreen.js",
               "DocumentMoniker": "C:\\Users\\venge\\OneDrive\\Desktop\\Projects\\Coding\\EcoShopper\\screens\\LoginScreen.js",
               "RelativeDocumentMoniker": "screens\\LoginScreen.js",
               "ToolTip": "C:\\Users\\venge\\OneDrive\\Desktop\\Projects\\Coding\\EcoShopper\\screens\\LoginScreen.js",
               "RelativeToolTip": "screens\\LoginScreen.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAmAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwAIAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-06-08T19:18:38.505Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "App.js",
               "DocumentMoniker": "C:\\Users\\venge\\OneDrive\\Desktop\\Projects\\Coding\\EcoShopper\\App.js",
               "RelativeDocumentMoniker": "App.js",
               "ToolTip": "C:\\Users\\venge\\OneDrive\\Desktop\\Projects\\Coding\\EcoShopper\\App.js",
               "RelativeToolTip": "App.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAeAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-06-08T19:15:29.698Z",
               "EditorCaption": ""

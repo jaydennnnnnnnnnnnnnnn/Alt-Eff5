@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: 5,
+        marginBottom: 10
     },
     buttonText: {
         color: '#fff',
@@ -44,6 +45,10 @@ const styles = StyleSheet.create({
         height: 150,
         marginBottom: 20,
     },
+    link: {
+        color: 'blue',
+        textDecorationLine: 'underline',
+    }
 })
 
 export default styles;

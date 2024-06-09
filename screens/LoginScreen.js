@@ -2,16 +2,19 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, Image } from 'react-native';
 import styles from '../Styles/Styles'
 
-import { Font } from 'expo-font';
 
 const localImage = require('../assets/logo.jpeg');
 export default function LoginScreen({ navigation }) {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
+    const handlePress = () => {
+
+        navigation.navigate('BusinessLogin');
+    };
+    
     const handleLogin = () => {
-        // You can implement your login logic here
-        // For simplicity, we'll just navigate to the Home screen
+        
         navigation.navigate('Home');
     };
 
@@ -38,6 +41,12 @@ export default function LoginScreen({ navigation }) {
             <TouchableOpacity style={styles.button} onPress={handleLogin}>
                 <Text style={styles.buttonText}>Login</Text>
             </TouchableOpacity>
+
+            <TouchableOpacity onPress={handlePress}>
+                <Text style={styles.link}>Click here to visit Example.com</Text>
+            </TouchableOpacity>
+
+
         </View>
     );
 }
