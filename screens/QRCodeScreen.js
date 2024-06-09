@@ -16,7 +16,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Please scan this QR code at the register to redeem RewardCredits!</Text> 
+      <Text style={styles.text}>EcoHarvest QR Code</Text> 
       {qrValue ? <QRCode value={qrValue} size={200} /> : null}
     </View>
   );
