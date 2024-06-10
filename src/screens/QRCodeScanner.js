@@ -1,6 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import { Text, View, StyleSheet, Button, Dimensions } from 'react-native';
 import { BarCodeScanner } from 'expo-barcode-scanner';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
+const AddToRewardCredits = async (data) => {
+  try {
+    // Retrieve current RewardCredits from AsyncStorage
+    let rewardCredits = await AsyncStorage.getItem('RewardCredits');
+    // Parse the value as float or default to 0
+    rewardCredits = parseFloat(rewardCredits) || 0;
+    // Extract characters starting from the 11th character onwards and parse as float
+    const creditsToAdd = parseFloat(data.substring(10));
+    // Add to RewardCredits
+    rewardCredits += creditsToAdd;
+    await AsyncStorage.setItem('RewardCredits', rewardCredits.toString());
+  } catch (error) {
+    console.error('Error adding to RewardCredits:', error);
+  }
+};
 
 export default function App() {
   const [hasPermission, setHasPermission] = useState(null);
@@ -20,6 +37,7 @@ export default function App() {
     setScanned(true);
     if (data.substring(0,9) === preassignedId) {
       setMessage('ID Verified!');
+      AddToRewardCredits(data); // Pass the scanned data to AddToRewardCredits
     } else {
       setMessage('Invalid ID');
     }
