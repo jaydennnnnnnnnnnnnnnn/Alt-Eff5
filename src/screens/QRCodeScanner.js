@@ -18,7 +18,7 @@ export default function App() {
 
   const handleBarCodeScanned = ({ type, data }) => {
     setScanned(true);
-    if (data === preassignedId) {
+    if (data.substring(0,9) === preassignedId) {
       setMessage('ID Verified!');
     } else {
       setMessage('Invalid ID');
