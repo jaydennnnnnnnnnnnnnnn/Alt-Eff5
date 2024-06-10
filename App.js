@@ -5,6 +5,7 @@ import ListScreen from './src/screens/ListScreen';
 import HomeScreen from './src/screens/HomeScreen';
 import StoreInfo from './src/screens/StoreInfo';
 import QRCodeScanner from './src/screens/QRCodeScanner';
+import BusinessLoginScreen from './src/screens/BusinessLoginScreen';
 
 const Stack = createNativeStackNavigator();
 
