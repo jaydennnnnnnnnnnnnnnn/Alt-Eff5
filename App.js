@@ -18,6 +18,7 @@ export default function App() {
                 <Stack.Screen name='Home' component={HomeScreen} />
                 <Stack.Screen name='StoreInfo' component={StoreInfo} />
                 <Stack.Screen name='QRCodeScanner' component={QRCodeScanner} />
+                <Stack.Screen name='BusinessLogin' component={BusinessLoginScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     );
