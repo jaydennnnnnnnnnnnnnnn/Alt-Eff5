@@ -13,7 +13,6 @@ export default function BusinessLoginScreen({ navigation }) {
     return (
         <View style={styles.container}>
             <Text style={styles.title1}>Welcome to EcoShopper!</Text>
-            <Image source={require('../../assets/logo.png')} style={styles.logo} />
             <Text style={styles.title2}>Login</Text>
             <TextInput
                 style={styles.input}
