@@ -1,0 +1,154 @@
+{
+  "sustainable_products": [
+    {
+      "id": "SSP001",
+      "category": "skincare",
+      "name": "Organic Aloe Vera Gel",
+      "brand": "EcoBeauty",
+      "price": 12.99,
+      "certification": "USDA Organic",
+      "description": "A soothing and hydrating gel made from 100% organic aloe vera, ideal for sensitive skin.",
+      "image": "https://images-fe.ssl-images-amazon.com/images/I/81Bt1ch8z6L._AC_UL600_SR600,600_.jpg"
+    },
+    {
+      "id": "SSP002",
+      "category": "skincare",
+      "name": "Natural Bamboo Charcoal Mask",
+      "brand": "GreenGlam",
+      "price": 15.50,
+      "certification": "Cruelty-Free",
+      "description": "A detoxifying face mask made with bamboo charcoal to cleanse and purify the skin.",
+      "image": "https://m.media-amazon.com/images/I/41fQfOyMVaL.jpg"
+    },
+    {
+      "id": "SSP003",
+      "category": "skincare",
+      "name": "Sustainable Tea Tree Oil",
+      "brand": "EarthPure",
+      "price": 10.00,
+      "certification": "Fair Trade",
+      "description": "Pure tea tree oil sourced sustainably, known for its natural antiseptic properties.",
+      "image": "https://yoursustainablestore.com/cdn/shop/products/AustralianTeaTreeOil-10ml.png?v=1627396846&width=1920"
+    },
+    {
+      "id": "SSP004",
+      "category": "skincare",
+      "name": "Eco-friendly Shea Butter",
+      "brand": "Nature's Essentials",
+      "price": 14.20,
+      "certification": "EcoCert",
+      "description": "Rich, moisturizing shea butter for skin and hair, sourced from fair trade farms.",
+      "image": "https://m.media-amazon.com/images/I/61NuhlIGvUL._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+      "id": "SSP005",
+      "category": "skincare",
+      "name": "Natural Seaweed Cleanser",
+      "brand": "Oceanic",
+      "price": 18.75,
+      "certification": "Certified Vegan",
+      "description": "A gentle cleanser made with seaweed extracts, ideal for removing impurities and hydrating skin.",
+      "image": "https://sapeloskincare.com/cdn/shop/products/sapelo-skin-care-natural-seaweed-face-cleanser-31233806631023.jpg?v=1681486151"
+    },
+    {
+      "id": "SGP001",
+      "category": "groceries",
+      "name": "Organic Quinoa",
+      "brand": "HealthyHarvest",
+      "price": 8.75,
+      "certification": "Non-GMO",
+      "description": "Nutritious quinoa grown organically, perfect as a healthy alternative to rice.",
+      "image": "https://www.originshealth.com.sg//image/cache/catalog/g/quinoa-seed-800x800.png"
+    },
+    {
+      "id": "SGP002",
+      "category": "groceries",
+      "name": "Fair Trade Coffee",
+      "brand": "CaféEthica",
+      "price": 9.50,
+      "certification": "Fair Trade",
+      "description": "Rich, aromatic coffee sourced from fair trade certified farms.",
+      "image": "https://shop.beanalliance.com.au/cdn/shop/products/OrganicClassicFairtradeCoffeeBeans2.jpg?v=1638409417"
+    },
+    {
+      "id": "SGP003",
+      "category": "groceries",
+      "name": "Eco-Friendly Brown Rice",
+      "brand": "Nature's Grain",
+      "price": 5.99,
+      "certification": "USDA Organic",
+      "description": "Whole grain brown rice grown using eco-friendly practices.",
+      "image": "https://media.nedigital.sg/fairprice/fpol/media/images/product/XL/11698846_XL1_20220405.jpg?w=1200&q=70"
+    },
+    {
+      "id": "SGP004",
+      "category": "groceries",
+      "name": "Sustainable Almond Milk",
+      "brand": "NutriVegan",
+      "price": 3.99,
+      "certification": "Certified Organic",
+      "description": "Creamy almond milk produced with sustainable farming methods.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZSpE7SGpkRIW9Neqxey9oP6lgq3-vlx5OqA&s"
+    },
+    {
+      "id": "SGP005",
+      "category": "grocery",
+      "name": "Compostable Pasta",
+      "brand": "GreenGrains",
+      "price": 4.25,
+      "certification": "Compostable Packaging",
+      "description": "Delicious pasta made from whole grains and packaged in compostable materials.",
+      "image": "https://img.resized.co/esmmagazine/eyJkYXRhIjoie1widXJsXCI6XCJodHRwczpcXFwvXFxcL21lZGlhLm1hZGlzb25wdWJsaWNhdGlvbnMuZXVcXFwvdXBsb2Fkc1xcXC8yMDIxXFxcLzAxXFxcLzMxMTIyNjM2XFxcL3Bhc3RhYWduZXNpY29tcG9zdGFiaWxlLnBuZ1wiLFwid2lkdGhcIjo2MDAsXCJoZWlnaHRcIjo0MDAsXCJkZWZhdWx0XCI6XCJodHRwczpcXFwvXFxcL2ltZy5yZXNpemVkLmNvXFxcL25vLWltYWdlLnBuZ1wiLFwib3B0aW9uc1wiOntcIm91dHB1dFwiOlwianBlZ1wifX0iLCJoYXNoIjoiOWU0NTI1MmExMmZjOTIyOTUwNWNmOTEwOGJiNTkyZDE2YzY3MTU3YSJ9/gruppo-colussi-introduces-pasta-agnesi-in-compostable-packaging.png"
+    },
+    {
+      "id": "SFP001",
+      "category": "furniture",
+      "name": "Sustainable Wooden Chair",
+      "brand": "EcoFurnish",
+      "price": 129.99,
+      "certification": "FSC Certified",
+      "description": "A sturdy wooden chair made from sustainably sourced wood, perfect for eco-friendly homes.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXBwymoXLEn6EWoPEc__pTLkdTL3-GeCH0qw&s"
+    },
+    {
+      "id": "SFP002",
+      "category": "furniture",
+      "name": "Recycled Plastic Table",
+      "brand": "EcoLiving",
+      "price": 99.99,
+      "certification": "Recycled Material",
+      "description": "A modern table made from recycled plastic, contributing to environmental sustainability.",
+      "image": "https://miro.medium.com/v2/resize:fit:1400/0*CEpfjC2kRvYQTOoq"
+    },
+    {
+      "id": "SFP003",
+      "category": "furniture",
+      "name": "Bamboo Bed Frame",
+      "brand": "EcoSleep",
+      "price": 349.99,
+      "certification": "FSC Certified",
+      "description": "A stylish bed frame crafted from sustainable bamboo, offering both comfort and eco-conscious design.",
+      "image": "https://m.media-amazon.com/images/I/81lTUWPc4oL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "SFP004",
+      "category": "furniture",
+      "name": "Upcycled Armchair",
+      "brand": "ReVive",
+      "price": 199.99,
+      "certification": "Upcycled Material",
+      "description": "An elegant armchair made from upcycled materials, reducing waste and promoting creative reuse.",
+      "image": "https://i.pinimg.com/736x/60/5b/5e/605b5e41bff1b9fba62b2f76d815b361.jpg"
+    },
+    {
+      "id": "SFP005",
+      "category": "furniture",
+      "name": "Eco-friendly Sofa",
+      "brand": "GreenComfort",
+      "price": 799.99,
+      "certification": "EcoCert",
+      "description": "A comfortable sofa crafted with eco-friendly materials, blending style and sustainability.",
+      "image": "https://images.squarespace-cdn.com/content/v1/547a3834e4b053a861c4874e/f34476f7-0769-4cf2-85a7-4796eb468d3a/Sustainably+Chic+%7C+Sustainable+Fashion+%26+Lifestyle+Blog+%7C+Best+Sustainable+Non-Toxic+Couches.jpg"
+    }
+  ]
+}
