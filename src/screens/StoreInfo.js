@@ -10,7 +10,7 @@ const GroceryScreen = ({ navigation }) => {
 
                 {/* Image */}
                 <Image
-                    source={require('../assets/EcoHarvest.jpeg')} // Replace with your image path
+                    source={require('../../assets/EcoHarvest.jpeg')} // Replace with your image path
                     style={styles.image}
                 />
 
