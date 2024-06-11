@@ -16,6 +16,7 @@ export default function HomeScreen() {
           placeholder="Search..."
           placeholderTextColor="#aaa" />
       </View>
+      <ScrollView>
       <Text style={styles.header}>Explore Now</Text>
       <ScrollView horizontal={true} style={styles.scrollView}>
         <TouchableOpacity onPress={() => navigation.navigate('List', { category: 'skincare' })} style={styles.thumbnailContainer}>
@@ -45,7 +46,7 @@ export default function HomeScreen() {
       <Text style={styles.categoryText}>The Hottest New Green Grocery Store!</Text>
       <Text style={styles.bodyText}>In the bustling landscape of consumerism, a new player has emerged, promising not just quality groceries but also a commitment to sustainability. GreenStorage is the latest addition to the market, offering a refreshing alternative to traditional supermarkets...
       </Text>
-
+      </ScrollView>
       {/* Bottom Toolbar */}
       <View style={styles.toolbar}>
         <View style={styles.circle}>
