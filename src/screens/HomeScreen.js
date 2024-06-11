@@ -115,8 +115,8 @@ const styles = StyleSheet.create({
     marginRight: 20,
   },
   thumbnailPic: {
-    width: 450,
-    height: 300,
+    width: 200,
+    height: 150,
     marginBottom: 20,
   },
   trendingPic: {
