@@ -7,7 +7,7 @@ export default function HomeScreen() {
 
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
+      <View style={styles.headerContainer}>
         <Image
           source={require('../../assets/usericon.png')}
           style={styles.profilePicture} />
@@ -16,7 +16,7 @@ export default function HomeScreen() {
           placeholder="Search..."
           placeholderTextColor="#aaa" />
       </View>
-      <Text style={styles.header}>Explore Now</Text>
+      <Text style={styles.headerText}>Explore Now</Text>
       <ScrollView horizontal={true} style={styles.scrollView}>
         <TouchableOpacity onPress={() => navigation.navigate('List', { category: 'skincare' })} style={styles.thumbnailContainer}>
           <Image
@@ -38,36 +38,36 @@ export default function HomeScreen() {
         </TouchableOpacity>
       </ScrollView>
 
-      <Text style={styles.header}>What's Trending</Text>
+      <Text style={styles.headerText}>What's Trending</Text>
       <Image
         source={require('../../assets/whatstrending.jpg')}
         style={styles.trendingPic} />
       <Text style={styles.categoryText}>The Hottest New Green Grocery Store!</Text>
-      <Text style={styles.bodyText}>In the bustling landscape of consumerism, a new player has emerged, promising not just quality groceries but also a commitment to sustainability. GreenStorage is the latest addition to the market, offering a refreshing alternative to traditional supermarkets...
+      <Text style={styles.bodyText}>
+        In the bustling landscape of consumerism, a new player has emerged, promising not just quality groceries but also a commitment to sustainability. GreenStorage is the latest addition to the market, offering a refreshing alternative to traditional supermarkets...
       </Text>
 
       {/* Bottom Toolbar */}
       <View style={styles.toolbar}>
+      <TouchableOpacity onPress={() => navigation.navigate('QRCodeScanner')}>
         <View style={styles.circle}>
-          {/* Image for Circular Button */}
           <Image
-            source={require('../../assets/favourites.svg')}
-            style={styles.circularButton}
+            source={require('../../assets/qr.png')}
+            style={[styles.circularButton, { resizeMode: 'contain ' }]}
           />
         </View>
-        {/* Horizontal Line */}
+      </TouchableOpacity>
+        <View style={styles.horizontalLine}></View>
+        <TouchableOpacity onPress={() => navigation.navigate('Cart')}>
+          <View style={styles.circle}>
+            <Image
+              source={require('../../assets/cart.png')}
+              style={[styles.circularButton, { resizeMode: 'contain' }]}
+            />
+          </View>
+        </TouchableOpacity>
         <View style={styles.horizontalLine}></View>
         <View style={styles.circle}>
-          {/* Image for Circular Button */}
-          <Image
-            source={require('../../assets/cart.png')}
-            style={[styles.circularButton, { resizeMode: 'contain' }]}
-          />
-        </View>
-        {/* Horizontal Line */}
-        <View style={styles.horizontalLine}></View>
-        <View style={styles.circle}>
-          {/* Image for Circular Button */}
           <Image
             source={require('../../assets/rewards.png')}
             style={[styles.circularButton, { resizeMode: 'contain'}]}
@@ -85,12 +85,10 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     backgroundColor: '#fff',
   },
-  header: {
+  headerContainer: {
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 20,
-    fontSize: 20,
-    fontWeight: 'bold',
   },
   profilePicture: {
     width: 50,
@@ -105,6 +103,11 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 20,
     paddingHorizontal: 15,
+  },
+  headerText: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    marginBottom: 10,
   },
   scrollView: {
     marginBottom: 10,
@@ -142,17 +145,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   circularButton: {
-    width: 100,
-    height: 100,
-    borderRadius: 100 / 2,
-    overflow: "hidden",
-    borderWidth: 3,
-    borderColor: "black",
+    width: 50,
+    height: 50,
+    overflow: 'hidden',
   },
   horizontalLine: {
-    flex: 1,
     height: 1,
     backgroundColor: '#ccc',
-    borderWidth: 3
+    flex: 1,
   },
 });
