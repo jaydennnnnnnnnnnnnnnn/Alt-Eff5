@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { Text, View, StyleSheet, Button, Dimensions } from 'react-native';
-import { BarCodeScanner } from 'expo-barcode-scanner';
+import React, { useState, useEffect } from "react";
+import { Text, View, StyleSheet, Button, Dimensions } from "react-native";
+import { CameraView, Camera } from "expo-camera";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const AddToRewardCredits = async (data) => {
+const AddToRewardCredits = async (data, navigation) => {
   try {
     // Retrieve current RewardCredits from AsyncStorage
     let rewardCredits = await AsyncStorage.getItem('RewardCredits');
@@ -14,30 +14,34 @@ const AddToRewardCredits = async (data) => {
     // Add to RewardCredits
     rewardCredits += creditsToAdd;
     await AsyncStorage.setItem('RewardCredits', rewardCredits.toString());
+    alert(`${creditsToAdd} credits added to account. You now have ${rewardCredits} credits.` );
+    navigation.navigate('Home');
   } catch (error) {
     console.error('Error adding to RewardCredits:', error);
   }
 };
 
-export default function App() {
+export default function QRCodeScanner({ navigation }) { // Receive navigation prop
   const [hasPermission, setHasPermission] = useState(null);
   const [scanned, setScanned] = useState(false);
   const [message, setMessage] = useState('');
 
-  const preassignedId = "3Dja295Aj"; // Replace with your actual preassigned ID
+  const preassignedId = "3Dja295Aj";
 
   useEffect(() => {
-    (async () => {
-      const { status } = await BarCodeScanner.requestPermissionsAsync();
-      setHasPermission(status === 'granted');
-    })();
+    const getCameraPermissions = async () => {
+      const { status } = await Camera.requestCameraPermissionsAsync();
+      setHasPermission(status === "granted");
+    };
+
+    getCameraPermissions();
   }, []);
 
   const handleBarCodeScanned = ({ type, data }) => {
     setScanned(true);
     if (data.substring(0,9) === preassignedId) {
       setMessage('ID Verified!');
-      AddToRewardCredits(data); // Pass the scanned data to AddToRewardCredits
+      AddToRewardCredits(data, navigation); // Pass the scanned data and navigation object
     } else {
       setMessage('Invalid ID');
     }
@@ -53,12 +57,17 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.cameraContainer}>
-        <BarCodeScanner
-          onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
+        <CameraView
+          onBarcodeScanned={scanned ? undefined : handleBarCodeScanned}
+          barcodeScannerSettings={{
+            barcodeTypes: ["qr"],
+          }}
           style={styles.camera}
         />
       </View>
-      {scanned && <Button title={'Tap to Scan Again'} onPress={() => setScanned(false)} />}
+      {scanned && (
+        <Button title={"Tap to Scan Again"} onPress={() => setScanned(false)} />
+      )}
       {message ? <Text style={styles.message}>{message}</Text> : null}
     </View>
   );
@@ -86,11 +95,5 @@ const styles = StyleSheet.create({
   camera: {
     width: cameraSize,
     height: cameraSize,
-  },
-  message: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    margin: 20,
-    textAlign: 'center',
   },
 });

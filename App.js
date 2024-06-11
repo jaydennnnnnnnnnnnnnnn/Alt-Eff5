@@ -8,6 +8,7 @@ import QRCodeScanner from './src/screens/QRCodeScanner';
 import QRCodeScreen from './src/screens/QRCodeScreen';
 import BusinessLoginScreen from './src/screens/BusinessLoginScreen';
 import CartScreen from './src/screens/CartScreen';
+import OrderSuccessScreen from './src/screens/OrderSuccessScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -23,6 +24,7 @@ export default function App() {
                 <Stack.Screen name='QRCode' component={QRCodeScreen} />
                 <Stack.Screen name='BusinessLogin' component={BusinessLoginScreen} />
                 <Stack.Screen name='Cart' component={CartScreen} />
+                <Stack.Screen name='OrderSuccess' component={OrderSuccessScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     );
