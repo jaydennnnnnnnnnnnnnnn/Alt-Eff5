@@ -1,9 +1,28 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import { View, ScrollView, Text, TextInput, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function HomeScreen() {
   const navigation = useNavigation();
+  const [rewardCredits, setRewardCredits] = useState(0);
+
+  const retrieveRewardCredits = async () => {
+    try {
+      const value = await AsyncStorage.getItem('RewardCredits');
+      if (value !== null) {
+        setRewardCredits(parseFloat(value));
+      }
+    } catch (error) {
+      console.error('Error retrieving rewardCredits:', error);
+    }
+  };
+
+  useEffect(() => {
+    const unsubscribe = navigation.addListener('focus', retrieveRewardCredits);
+
+    return unsubscribe;
+  }, [navigation]);
 
   return (
     <View style={styles.container}>
@@ -18,7 +37,9 @@ export default function HomeScreen() {
           placeholderTextColor="#aaa"
         />
       </View>
-      
+
+     <ScrollView> 
+      <Text style={styles.bodyText}>You now have: {rewardCredits} RewardCredits</Text>
       <Text style={styles.headerText}>Explore Now</Text>
       <ScrollView horizontal={true} style={styles.scrollView}>
         <TouchableOpacity onPress={() => navigation.navigate('List', { category: 'skincare' })} style={styles.thumbnailContainer}>
@@ -53,7 +74,7 @@ export default function HomeScreen() {
       <Text style={styles.bodyText}>
         In the bustling landscape of consumerism, a new player has emerged, promising not just quality groceries but also a commitment to sustainability. GreenStorage is the latest addition to the market, offering a refreshing alternative to traditional supermarkets...
       </Text>
-
+      </ScrollView>
       <View style={styles.toolbar}>
         <TouchableOpacity onPress={() => navigation.navigate('QRCodeScanner')}>
           <View style={styles.circle}>
@@ -87,7 +108,8 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: 50,
+    paddingTop: 30,
+    paddingBottom: 20,
     paddingHorizontal: 10,
     backgroundColor: '#fff',
   },
@@ -121,11 +143,12 @@ const styles = StyleSheet.create({
   },
   thumbnailContainer: {
     marginRight: 20,
+    marginBottom: 30,
   },
   thumbnailPic: {
     width: 200,
     height: 150,
-    marginBottom: 20,
+    marginBottom: 10,
   },
   trendingPic: {
     width: '100%',

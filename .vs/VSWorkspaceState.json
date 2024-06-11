@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\assets",
-    "\\screens",
-    "\\Styles"
+    "\\src",
+    "\\src\\screens"
   ],
-  "SelectedNode": "\\assets\\EcoHarvest.jpeg",
   "PreviewInSolutionExplorer": false
 }
