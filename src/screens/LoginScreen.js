@@ -10,6 +10,10 @@ export default function LoginScreen({ navigation }) {
         navigation.navigate('Home'); // Navigate to HomeScreen
     };
 
+    const handlePress = () => {
+        navigation.navigate('BusinessLogin');
+    };
+    
     return (
         <View style={styles.container}>
             <Text style={styles.title1}>Welcome to EcoShopper!</Text>
@@ -31,6 +35,10 @@ export default function LoginScreen({ navigation }) {
             />
             <TouchableOpacity style={styles.button} onPress={handleLogin}>
                 <Text style={styles.buttonText}>Login</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity onPress={handlePress}>
+                <Text style={styles.link}>I am a Business</Text>
             </TouchableOpacity>
         </View>
     );
