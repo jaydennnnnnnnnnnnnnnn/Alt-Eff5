@@ -1,0 +1,104 @@
+{
+    "sustainable_products": [
+      {
+        "id": "SSP001",
+        "category": "skincare",
+        "name": "Organic Aloe Vera Gel",
+        "brand": "EcoBeauty",
+        "price": 12.99,
+        "quantity": 2,
+        "certification": "USDA Organic",
+        "description": "A soothing and hydrating gel made from 100% organic aloe vera, ideal for sensitive skin.",
+        "image": "https://images-fe.ssl-images-amazon.com/images/I/81Bt1ch8z6L._AC_UL600_SR600,600_.jpg"
+      },
+      {
+        "id": "SSP002",
+        "category": "skincare",
+        "name": "Natural Bamboo Charcoal Mask",
+        "brand": "EcoBeauty",
+        "price": 15.50,
+        "quantity": 1,
+        "certification": "Cruelty-Free",
+        "description": "A detoxifying face mask made with bamboo charcoal to cleanse and purify the skin.",
+        "image": "https://m.media-amazon.com/images/I/41fQfOyMVaL.jpg"
+      },
+      {
+        "id": "SSP003",
+        "category": "skincare",
+        "name": "Sustainable Tea Tree Oil",
+        "brand": "EarthPure",
+        "price": 10.00,
+        "quantity": 3,
+        "certification": "Fair Trade",
+        "description": "Pure tea tree oil sourced sustainably, known for its natural antiseptic properties.",
+        "image": "https://yoursustainablestore.com/cdn/shop/products/AustralianTeaTreeOil-10ml.png?v=1627396846&width=1920"
+      },
+      {
+        "id": "SSP004",
+        "category": "skincare",
+        "name": "Eco-friendly Shea Butter",
+        "brand": "Nature's Essentials",
+        "price": 14.20,
+        "quantity": 1,
+        "certification": "EcoCert",
+        "description": "Rich, moisturizing shea butter for skin and hair, sourced from fair trade farms.",
+        "image": "https://m.media-amazon.com/images/I/61NuhlIGvUL._AC_UF894,1000_QL80_.jpg"
+      },
+      {
+        "id": "SSP005",
+        "category": "skincare",
+        "name": "Natural Seaweed Cleanser",
+        "brand": "Oceanic",
+        "price": 18.75,
+        "quantity": 1,
+        "certification": "Certified Vegan",
+        "description": "A gentle cleanser made with seaweed extracts, ideal for removing impurities and hydrating skin.",
+        "image": "https://sapeloskincare.com/cdn/shop/products/sapelo-skin-care-natural-seaweed-face-cleanser-31233806631023.jpg?v=1681486151"
+      },
+      {
+        "id": "SGP001",
+        "category": "groceries",
+        "name": "Organic Quinoa",
+        "brand": "HealthyHarvest",
+        "price": 8.75,
+        "quantity": 2,
+        "certification": "Non-GMO",
+        "description": "Nutritious quinoa grown organically, perfect as a healthy alternative to rice.",
+        "image": "https://www.originshealth.com.sg//image/cache/catalog/g/quinoa-seed-800x800.png"
+      },
+      {
+        "id": "SGP002",
+        "category": "groceries",
+        "name": "Fair Trade Coffee",
+        "brand": "CaféEthica",
+        "price": 9.50,
+        "quantity": 1,
+        "certification": "Fair Trade",
+        "description": "Rich, aromatic coffee sourced from fair trade certified farms.",
+        "image": "https://shop.beanalliance.com.au/cdn/shop/products/OrganicClassicFairtradeCoffeeBeans2.jpg?v=1638409417"
+      },
+      {
+        "id": "SGP003",
+        "category": "groceries",
+        "name": "Eco-Friendly Brown Rice",
+        "brand": "Nature's Grain",
+        "price": 5.99,
+        "quantity": 5,
+        "certification": "USDA Organic",
+        "description": "Whole grain brown rice grown using eco-friendly practices.",
+        "image": "https://media.nedigital.sg/fairprice/fpol/media/images/product/XL/11698846_XL1_20220405.jpg?w=1200&q=70"
+      },
+      {
+        "id": "SGP004",
+        "category": "groceries",
+        "name": "Sustainable Almond Milk",
+        "brand": "NutriVegan",
+        "price": 3.99,
+        "quantity": 3,
+        "certification": "Certified Organic",
+        "description": "Creamy almond milk produced with sustainable farming methods.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZSpE7SGpkRIW9Neqxey9oP6lgq3-vlx5OqA&s"
+      }
+    ]
+}
+  

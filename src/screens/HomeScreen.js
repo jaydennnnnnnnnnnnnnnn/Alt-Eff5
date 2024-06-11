@@ -10,30 +10,36 @@ export default function HomeScreen() {
       <View style={styles.headerContainer}>
         <Image
           source={require('../../assets/usericon.png')}
-          style={styles.profilePicture} />
+          style={styles.profilePicture}
+        />
         <TextInput
           style={styles.searchBar}
           placeholder="Search..."
-          placeholderTextColor="#aaa" />
+          placeholderTextColor="#aaa"
+        />
       </View>
+      
       <Text style={styles.headerText}>Explore Now</Text>
       <ScrollView horizontal={true} style={styles.scrollView}>
         <TouchableOpacity onPress={() => navigation.navigate('List', { category: 'skincare' })} style={styles.thumbnailContainer}>
           <Image
             source={require('../../assets/Skincare.jpg')}
-            style={styles.thumbnailPic} />
+            style={styles.thumbnailPic}
+          />
           <Text style={styles.categoryText}>Skincare</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={() => navigation.navigate('List', { category: 'groceries' })} style={styles.thumbnailContainer}>
           <Image
             source={require('../../assets/Groceries.jpg')}
-            style={styles.thumbnailPic} />
+            style={styles.thumbnailPic}
+          />
           <Text style={styles.categoryText}>Groceries</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={() => navigation.navigate('List', { category: 'furniture' })} style={styles.thumbnailContainer}>
           <Image
             source={require('../../assets/Furniture.jpeg')}
-            style={styles.thumbnailPic} />
+            style={styles.thumbnailPic}
+          />
           <Text style={styles.categoryText}>Furniture</Text>
         </TouchableOpacity>
       </ScrollView>
@@ -41,28 +47,28 @@ export default function HomeScreen() {
       <Text style={styles.headerText}>What's Trending</Text>
       <Image
         source={require('../../assets/whatstrending.jpg')}
-        style={styles.trendingPic} />
+        style={styles.trendingPic}
+      />
       <Text style={styles.categoryText}>The Hottest New Green Grocery Store!</Text>
       <Text style={styles.bodyText}>
         In the bustling landscape of consumerism, a new player has emerged, promising not just quality groceries but also a commitment to sustainability. GreenStorage is the latest addition to the market, offering a refreshing alternative to traditional supermarkets...
       </Text>
 
-      {/* Bottom Toolbar */}
       <View style={styles.toolbar}>
-      <TouchableOpacity onPress={() => navigation.navigate('QRCodeScanner')}>
-        <View style={styles.circle}>
-          <Image
-            source={require('../../assets/qr.png')}
-            style={[styles.circularButton, { resizeMode: 'contain ' }]}
-          />
-        </View>
-      </TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('QRCodeScanner')}>
+          <View style={styles.circle}>
+            <Image
+              source={require('../../assets/qr.png')}
+              style={styles.circularButton}
+            />
+          </View>
+        </TouchableOpacity>
         <View style={styles.horizontalLine}></View>
         <TouchableOpacity onPress={() => navigation.navigate('Cart')}>
           <View style={styles.circle}>
             <Image
               source={require('../../assets/cart.png')}
-              style={[styles.circularButton, { resizeMode: 'contain' }]}
+              style={styles.circularButton}
             />
           </View>
         </TouchableOpacity>
@@ -70,7 +76,7 @@ export default function HomeScreen() {
         <View style={styles.circle}>
           <Image
             source={require('../../assets/rewards.png')}
-            style={[styles.circularButton, { resizeMode: 'contain'}]}
+            style={styles.circularButton}
           />
         </View>
       </View>
@@ -117,8 +123,8 @@ const styles = StyleSheet.create({
     marginRight: 20,
   },
   thumbnailPic: {
-    width: 450,
-    height: 300,
+    width: 200,
+    height: 150,
     marginBottom: 20,
   },
   trendingPic: {

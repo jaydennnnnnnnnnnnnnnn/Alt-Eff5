@@ -3,72 +3,91 @@ import { View, Text, FlatList, StyleSheet, Image, Button, TouchableOpacity } fro
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function CartScreen({ navigation }) {
-  const [selectedPayment, setSelectedPayment] = useState('PayNow');
-  const [cartItems, setCartItems] = useState([]);
-  const [refresh, setRefresh] = useState(false);
-  const [loading, setLoading] = useState(true); // Added loading state
+  const [cartItems, setCartItems] = useState({});
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetchCartItems();
-  }, [refresh]);
+  }, []);
 
   const fetchCartItems = async () => {
     try {
       const jsonValue = await AsyncStorage.getItem('cart');
-      console.log('test cart:', jsonValue);
       if (jsonValue !== null) {
         const items = JSON.parse(jsonValue);
-        console.log('Cart Items:', items);
         setCartItems(items);
-        setLoading(false); // Set loading to false after fetching items
       } else {
-        setCartItems([]); // Set cartItems to empty array if no items found
-        setLoading(false); // Set loading to false
-        console.log('Cart is empty or not set.');
+        setCartItems({});
       }
+      setLoading(false);
     } catch (error) {
       console.error('Error fetching cart items: ', error);
-      setLoading(false); // Set loading to false in case of error
+      setLoading(false);
     }
   };
 
   const removeProduct = async (productId) => {
-    const updatedItems = cartItems.filter(item => item.id !== productId);
+    const updatedItems = { ...cartItems };
+    delete updatedItems[productId];
+
     try {
       await AsyncStorage.setItem('cart', JSON.stringify(updatedItems));
-      setRefresh(!refresh);
+      setCartItems(updatedItems);
     } catch (error) {
       console.error('Error removing product from cart: ', error);
     }
   };
-  
+
+  const clearCart = async () => {
+    try {
+      await AsyncStorage.removeItem('cart');
+      setCartItems({});
+    } catch (error) {
+      console.error('Error clearing cart: ', error);
+    }
+  };
+
   // Convert cartItems object to an array of product objects
-  const cartItemsArray = Object.values(cartItems);
+  const cartItemsArray = Object.keys(cartItems).map(key => cartItems[key]);
+
+  // Group items by brand
+  const groupedItems = cartItemsArray.reduce((acc, item) => {
+    if (!acc[item.brand]) {
+      acc[item.brand] = [];
+    }
+    acc[item.brand].push(item);
+    return acc;
+  }, {});
 
   const totalCost = cartItemsArray.reduce((total, item) => total + (item.price * item.quantity), 0);
 
   return (
     <View style={styles.container}>
       <Text style={styles.header}>Your Cart</Text>
-      <Button title='Clear Cart' onPress={() => AsyncStorage.clear()} style={styles.clearButton}/>
+      <Button title='Clear Cart' onPress={clearCart} style={styles.clearButton} />
 
-      {loading ? ( // Show loading indicator while fetching data
+      {loading ? (
         <Text>Loading...</Text>
       ) : (
         <FlatList
-          data={cartItemsArray}
-          keyExtractor={(item) => item.id.toString()}
-          renderItem={({ item }) => (
-            <View style={styles.productContainer}>
-              <Image source={{ uri: item.image }} style={styles.productImage} />
-              <View style={styles.productDetails}>
-                <Text style={styles.productName}>{item.name}</Text>
-                <Text style={styles.productPrice}>Price: ${item.price.toFixed(2)}</Text>
-                <Text style={styles.productQuantity}>Quantity: {item.quantity}</Text>
-              </View>
-              <TouchableOpacity onPress={() => removeProduct(item.id)}>
-                <Image source={require('../../assets/trash.png')} style={styles.trashIcon} />
-              </TouchableOpacity>
+          data={Object.keys(groupedItems)}
+          keyExtractor={(brand) => brand}
+          renderItem={({ item: brand }) => (
+            <View>
+              <Text style={styles.brandHeader}>{brand}</Text>
+              {groupedItems[brand].map(product => (
+                <View key={product.id} style={styles.productContainer}>
+                  <Image source={{ uri: product.image }} style={styles.productImage} />
+                  <View style={styles.productDetails}>
+                    <Text style={styles.productName}>{product.name}</Text>
+                    <Text style={styles.productPrice}>Price: ${product.price.toFixed(2)}</Text>
+                    <Text style={styles.productQuantity}>Quantity: {product.quantity}</Text>
+                  </View>
+                  <TouchableOpacity onPress={() => removeProduct(`${product.id}_${product.brand}`)}>
+                    <Image source={require('../../assets/trash.png')} style={styles.trashIcon} />
+                  </TouchableOpacity>
+                </View>
+              ))}
             </View>
           )}
         />
@@ -95,11 +114,16 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 16,
   },
+  brandHeader: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    marginTop: 16,
+    marginBottom: 8,
+  },
   productContainer: {
     flexDirection: 'row',
     alignItems: 'center',
     marginBottom: 8,
-    marginTop: 16
   },
   productImage: {
     width: 80,
