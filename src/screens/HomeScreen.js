@@ -39,7 +39,7 @@ export default function HomeScreen() {
       </View>
 
      <ScrollView> 
-      <Text style={styles.bodyText}>You now have: {rewardCredits} RewardCredits</Text>
+      <Text style={styles.bodyText}>You have: {rewardCredits} RewardCredits</Text>
       <Text style={styles.headerText}>Explore Now</Text>
       <ScrollView horizontal={true} style={styles.scrollView}>
         <TouchableOpacity onPress={() => navigation.navigate('List', { category: 'skincare' })} style={styles.thumbnailContainer}>
@@ -94,12 +94,14 @@ export default function HomeScreen() {
           </View>
         </TouchableOpacity>
         <View style={styles.horizontalLine}></View>
+        <TouchableOpacity onPress={() => navigation.navigate('List', { category: 'rewards' })}>
         <View style={styles.circle}>
           <Image
             source={require('../../assets/rewards.png')}
             style={styles.circularButton}
           />
         </View>
+        </TouchableOpacity>
       </View>
     </View>
   );

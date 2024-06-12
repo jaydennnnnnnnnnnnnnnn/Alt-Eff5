@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
-import styles from '../styles/styles';
 
 const toQRScreen = ( navigation ) => {
   navigation.navigate('QRCode');
