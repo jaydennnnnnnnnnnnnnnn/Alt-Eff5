@@ -5,21 +5,21 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function HomeScreen() {
   const navigation = useNavigation();
-  const [ecoCredits, setecoCredits] = useState(0);
+  const [EcoCredits, setEcoCredits] = useState(0);
 
-  const retrieveecoCredits = async () => {
+  const retrieveEcoCredits = async () => {
     try {
-      const value = await AsyncStorage.getItem('ecoCredits');
+      const value = await AsyncStorage.getItem('EcoCredits');
       if (value !== null) {
-        setecoCredits(parseFloat(value));
+        setEcoCredits(parseFloat(value));
       }
     } catch (error) {
-      console.error('Error retrieving ecoCredits:', error);
+      console.error('Error retrieving EcoCredits:', error);
     }
   };
 
   useEffect(() => {
-    const unsubscribe = navigation.addListener('focus', retrieveecoCredits);
+    const unsubscribe = navigation.addListener('focus', retrieveEcoCredits);
 
     return unsubscribe;
   }, [navigation]);
@@ -39,7 +39,7 @@ export default function HomeScreen() {
       </View>
 
      <ScrollView> 
-      <Text style={styles.bodyText}>You have: {ecoCredits} ecoCredits</Text>
+      <Text style={styles.bodyText}>You have: {EcoCredits} EcoCredits</Text>
       <Text style={styles.headerText}>Explore Now</Text>
       <ScrollView horizontal={true} style={styles.scrollView}>
         <TouchableOpacity onPress={() => navigation.navigate('List', { category: 'skincare' })} style={styles.thumbnailContainer}>

@@ -23,11 +23,12 @@ export default function App() {
                 <Stack.Screen name='Home' component={HomeScreen} />
                 <Stack.Screen name='StoreInfo' component={StoreInfo} />
                 <Stack.Screen name='QRCodeScanner' component={QRCodeScanner} />
-                <Stack.Screen name='QRCode' component={QRCodeScreen} />
                 <Stack.Screen name='BusinessLogin' component={BusinessLoginScreen} />
                 <Stack.Screen name='Cart' component={CartScreen} />
                 <Stack.Screen name='OrderSuccess' component={OrderSuccessScreen} />
                 <Stack.Screen name='BusinessHome' component={BusinessHomeScreen} />
+                <Stack.Screen name='QRCode' component={QRCodeScreen} />
+                <Stack.Screen name='BusinessOrders' component={BusinessOrdersScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     );
