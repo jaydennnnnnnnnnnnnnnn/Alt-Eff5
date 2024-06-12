@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
-import styles from '../styles/styles';
 
 const toQRScreen = ( navigation ) => {
   navigation.navigate('QRCode');
@@ -8,8 +7,6 @@ const toQRScreen = ( navigation ) => {
 
 const toOrderScreen = ( navigation ) => {
     navigation.navigate('BusinessOrders');
-   
-
 }
 
 export default function BusinessHome({ navigation }) {
