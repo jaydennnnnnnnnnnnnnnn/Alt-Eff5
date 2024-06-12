@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet, TextInput, Button, Alert } from 'react-native';
 import QRCode from 'react-native-qrcode-svg';
 
-export default function App() {
+export default function QRCodeScreen({ navigation }) {
   const [qrValue, setQrValue] = useState('');
   const [number, setNumber] = useState('');
   const UserID = '3Dja295Aj+';
@@ -31,6 +31,7 @@ export default function App() {
           onChangeText={text => setNumber(text)}
         />
         <Button title="Confirm" onPress={generateQRCode} />
+        <Button title="Back to homepage" onPress={navigation.navigate('BusinessHome')} />
       </View>
     </View>
   );

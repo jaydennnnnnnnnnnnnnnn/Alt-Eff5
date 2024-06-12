@@ -7,7 +7,7 @@ export default function BusinessLoginScreen({ navigation }) {
     const [password, setPassword] = useState('');
 
     const handleLogin = () => {
-        navigation.navigate('Home'); // Navigate to HomeScreen
+        navigation.navigate('BusinessHome'); // Navigate to HomeScreen
     };
 
     const handlePress = () => {
