@@ -7,8 +7,6 @@ const toQRScreen = ( navigation ) => {
 
 const toOrderScreen = ( navigation ) => {
     navigation.navigate('BusinessOrders');
-   
-
 }
 
 export default function BusinessHome({ navigation }) {
