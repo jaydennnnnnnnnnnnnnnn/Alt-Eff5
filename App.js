@@ -28,7 +28,6 @@ export default function App() {
                 <Stack.Screen name='Cart' component={CartScreen} />
                 <Stack.Screen name='OrderSuccess' component={OrderSuccessScreen} />
                 <Stack.Screen name='BusinessHome' component={BusinessHomeScreen} />
-                <Stack.Screen name='BusinessOrders' component={BusinessOrdersScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     );
