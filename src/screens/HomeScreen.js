@@ -9,12 +9,12 @@ export default function HomeScreen() {
 
   const retrieveRewardCredits = async () => {
     try {
-      const value = await AsyncStorage.getItem('RewardCredits');
+      const value = await AsyncStorage.getItem('EcoCredits');
       if (value !== null) {
         setRewardCredits(parseFloat(value));
       }
     } catch (error) {
-      console.error('Error retrieving rewardCredits:', error);
+      console.error('Error retrieving EcoCredits:', error);
     }
   };
 
@@ -39,7 +39,7 @@ export default function HomeScreen() {
       </View>
 
      <ScrollView> 
-      <Text style={styles.bodyText}>You have: {rewardCredits} RewardCredits</Text>
+      <Text style={styles.bodyText}>You have: {EcoCredits} EcoCredits</Text>
       <Text style={styles.headerText}>Explore Now</Text>
       <ScrollView horizontal={true} style={styles.scrollView}>
         <TouchableOpacity onPress={() => navigation.navigate('List', { category: 'skincare' })} style={styles.thumbnailContainer}>
@@ -94,7 +94,7 @@ export default function HomeScreen() {
           </View>
         </TouchableOpacity>
         <View style={styles.horizontalLine}></View>
-        <TouchableOpacity onPress={() => navigation.navigate('List', { category: 'rewards' })}>
+        <TouchableOpacity onPress={() => navigation.navigate('Rewards')}>
         <View style={styles.circle}>
           <Image
             source={require('../../assets/rewards.png')}
