@@ -17,7 +17,7 @@ export default function LoginScreen({ navigation }) {
     return (
         <View style={styles.container}>
             <Text style={styles.title1}>Welcome to EcoShopper!</Text>
-            <Image source={require('../../assets/logo.png')} style={styles.logo} />
+            <Image source={require('../../assets/logo.png')} resizeMode= 'contain' style={styles.logo} />
             <Text style={styles.title2}>Login</Text>
             <TextInput
                 style={styles.input}

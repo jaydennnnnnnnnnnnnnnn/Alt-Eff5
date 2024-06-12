@@ -42,6 +42,7 @@ const styles = StyleSheet.create({
     },
     logo: {
         marginBottom: 10,
+        width: 500,
     },
     link: {
         color: 'blue',
