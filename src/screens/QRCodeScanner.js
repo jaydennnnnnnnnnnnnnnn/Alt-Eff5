@@ -75,7 +75,7 @@ export default function QRCodeScanner({ navigation }) { // Receive navigation pr
 }
 
 const { width } = Dimensions.get('window');
-const cameraSize = width * 0.8;
+const cameraSize = width * 0.7;
 
 const styles = StyleSheet.create({
   container: {
@@ -84,9 +84,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   text: {
-    fontSize: 50, 
+    fontSize: 25, 
     fontWeight: 'bold',
     marginBottom: 40,
+    textAlign: "center",
+    width: '80%',
   },
   cameraContainer: {
     width: cameraSize,
