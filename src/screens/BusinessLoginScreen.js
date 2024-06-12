@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, Image } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, } from 'react-native';
+
 
 export default function BusinessLoginScreen({ navigation }) {
     const [email, setEmail] = useState('');

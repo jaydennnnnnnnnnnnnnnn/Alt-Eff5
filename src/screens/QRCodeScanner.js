@@ -3,21 +3,21 @@ import { Text, View, StyleSheet, Button, Dimensions } from "react-native";
 import { CameraView, Camera } from "expo-camera";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const AddToRewardCredits = async (data, navigation) => {
+const AddToEcoCredits = async (data, navigation) => {
   try {
-    // Retrieve current RewardCredits from AsyncStorage
-    let rewardCredits = await AsyncStorage.getItem('RewardCredits');
+    // Retrieve current EcoCredits from AsyncStorage
+    let EcoCredits = await AsyncStorage.getItem('EcoCredits');
     // Parse the value as float or default to 0
-    rewardCredits = parseFloat(rewardCredits) || 0;
+    EcoCredits = parseFloat(EcoCredits) || 0;
     // Extract characters starting from the 11th character onwards and parse as float
     const creditsToAdd = parseFloat(data.substring(10));
-    // Add to RewardCredits
-    rewardCredits += creditsToAdd;
-    await AsyncStorage.setItem('RewardCredits', rewardCredits.toString());
-    alert(`${creditsToAdd} credits added to account. You now have ${rewardCredits} credits.` );
+    // Add to EcoCredits
+    EcoCredits += creditsToAdd;
+    await AsyncStorage.setItem('EcoCredits', EcoCredits.toString());
+    alert(`${creditsToAdd} credits added to account. You now have ${EcoCredits} credits.` );
     navigation.navigate('Home');
   } catch (error) {
-    console.error('Error adding to RewardCredits:', error);
+    console.error('Error adding to EcoCredits:', error);
   }
 };
 
@@ -41,7 +41,7 @@ export default function QRCodeScanner({ navigation }) { // Receive navigation pr
     setScanned(true);
     if (data.substring(0,9) === preassignedId) {
       setMessage('ID Verified!');
-      AddToRewardCredits(data, navigation); // Pass the scanned data and navigation object
+      AddToEcoCredits(data, navigation); // Pass the scanned data and navigation object
     } else {
       setMessage('Invalid ID');
     }
