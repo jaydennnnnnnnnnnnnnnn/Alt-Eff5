@@ -32,7 +32,7 @@ const GroceryScreen = ({ navigation }) => {
                     <Text style={styles.buttonText}>Go to Website</Text>
                 </TouchableOpacity>
                 <TouchableOpacity onPress={() => navigation.navigate('QRCodeScanner')} style={styles.button}>
-                    <Text style={styles.buttonText}>Select this Store</Text>
+                    <Text style={styles.buttonText}>Scan QR Code</Text>
                 </TouchableOpacity>
             </View>
 
