@@ -5,13 +5,15 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function HomeScreen() {
   const navigation = useNavigation();
-  const [EcoCredits, setecoCredits] = useState(0);
+
+  const [EcoCredits, setEcoCredits] = useState(0);
+
 
   const retrieveEcoCredits = async () => {
     try {
       const value = await AsyncStorage.getItem('EcoCredits');
       if (value !== null) {
-        setecoCredits(parseFloat(value));
+        setEcoCredits(parseFloat(value));
       }
     } catch (error) {
       console.error('Error retrieving EcoCredits:', error);
@@ -20,6 +22,7 @@ export default function HomeScreen() {
 
   useEffect(() => {
     const unsubscribe = navigation.addListener('focus', retrieveEcoCredits);
+
     return unsubscribe;
   }, [navigation]);
 
@@ -44,25 +47,27 @@ export default function HomeScreen() {
         />
       </View>
 
-      <ScrollView>
-        <Text style={styles.bodyText}>You have: {EcoCredits} EcoCredits</Text>
-        <Text style={styles.headerText}>Explore Now</Text>
-        <ScrollView horizontal={true} style={styles.scrollView}>
-          <TouchableOpacity onPress={() => navigation.navigate('List', { category: 'skincare' })} style={styles.thumbnailContainer}>
-            <Image
-              source={require('../../assets/Skincare.jpg')}
-              style={styles.thumbnailPic}
-            />
-            <Text style={styles.categoryText}>Skincare</Text>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => navigation.navigate('List', { category: 'groceries' })} style={styles.thumbnailContainer}>
-            <Image
-              source={require('../../assets/Groceries.jpg')}
-              style={styles.thumbnailPic}
-            />
-            <Text style={styles.categoryText}>Groceries</Text>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => navigation.navigate('List', { category: 'furniture' })} style={styles.thumbnailContainer}>
+
+     <ScrollView> 
+      <Text style={styles.bodyText}>You have: {EcoCredits} EcoCredits</Text>
+      <Text style={styles.headerText}>Explore Now</Text>
+      <ScrollView horizontal={true} style={styles.scrollView}>
+        <TouchableOpacity onPress={() => navigation.navigate('List', { category: 'skincare' })} style={styles.thumbnailContainer}>
+          <Image
+            source={require('../../assets/Skincare.jpg')}
+            style={styles.thumbnailPic}
+          />
+          <Text style={styles.categoryText}>Skincare</Text>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('List', { category: 'groceries' })} style={styles.thumbnailContainer}>
+          <Image
+            source={require('../../assets/Groceries.jpg')}
+            style={styles.thumbnailPic}
+          />
+          <Text style={styles.categoryText}>Groceries</Text>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('List', { category: 'furniture' })} style={styles.thumbnailContainer}>
+          
             <Image
               source={require('../../assets/Furniture.jpeg')}
               style={styles.thumbnailPic}
@@ -73,6 +78,7 @@ export default function HomeScreen() {
 
         <Text style={styles.headerText}>Stores Near You</Text>
         <View style={styles.mapContainer}>
+
           <Image
             source={require('../../assets/nearmap.png')}
             style={styles.mapImage}

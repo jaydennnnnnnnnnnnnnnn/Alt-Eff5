@@ -10,8 +10,8 @@ const AddToEcoCredits = async (data, navigation) => {
     // Parse the value as float or default to 0
     EcoCredits = parseFloat(EcoCredits) || 0;
     // Extract characters starting from the 11th character onwards and parse as float
-    const creditsToAdd = parseFloat(data.substring(10));
-    // Add to EcoCredits
+    creditsToAdd = parseFloat(data.substring(10));
+    creditsToAdd = Math.floor(creditsToAdd/5 * 100) 
     EcoCredits += creditsToAdd;
     await AsyncStorage.setItem('EcoCredits', EcoCredits.toString());
     alert(`${creditsToAdd} credits added to account. You now have ${EcoCredits} credits.` );

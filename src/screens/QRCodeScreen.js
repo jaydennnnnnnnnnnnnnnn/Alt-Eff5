@@ -30,8 +30,10 @@ export default function QRCodeScreen({ navigation }) {
           value={number}
           onChangeText={text => setNumber(text)}
         />
+      </View>
+      <View style={styles.buttonContainer}>
         <Button title="Confirm" onPress={generateQRCode} />
-        <Button title="Back to homepage" onPress={navigation.navigate('BusinessHome')} />
+        <Button title="Back to homepage" onPress={() => navigation.navigate('BusinessHome')} />
       </View>
     </View>
   );
@@ -42,7 +44,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#fff', // Background color of the container
+    backgroundColor: '#fff',
   },
   text: {
     fontSize: 18,
@@ -58,6 +60,7 @@ const styles = StyleSheet.create({
   inputContainer: {
     flexDirection: 'row',
     alignItems: 'center',
+    marginBottom: 20, // Add marginBottom for spacing
   },
   input: {
     height: 40,
@@ -65,12 +68,16 @@ const styles = StyleSheet.create({
     borderColor: 'gray',
     borderWidth: 1,
     borderRadius: 5,
-    marginRight: 10,
     paddingHorizontal: 10,
   },
   currency: {
     fontSize: 18,
     fontWeight: 'bold',
     marginRight: 5,
+  },
+  buttonContainer: {
+    width: '80%',
+    flexDirection: 'row',
+    justifyContent: 'space-around', // Distribute buttons evenly
   },
 });
