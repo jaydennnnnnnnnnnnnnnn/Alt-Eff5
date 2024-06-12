@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, Button } from 'react-native';
+import { View, Text, StyleSheet, Button, Image } from 'react-native';
 
 export default function OrderSuccessPage({ navigation }) {
   const goToHome = () => {
@@ -12,6 +12,7 @@ export default function OrderSuccessPage({ navigation }) {
 
   return (
     <View style={styles.container}>
+      <Image source={require('../../assets/ordersuccess.png')}/>
       <Text style={styles.message}>
         Your order has been confirmed successfully and will be received by our partners. Thank You!
       </Text>
