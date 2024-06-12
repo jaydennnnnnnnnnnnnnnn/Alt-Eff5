@@ -56,6 +56,7 @@ export default function QRCodeScanner({ navigation }) { // Receive navigation pr
 
   return (
     <View style={styles.container}>
+      <Text style={styles.text}>Scan your QR code at any registered store to get 5 EcoCredits for every $1 you spend!</Text>
       <View style={styles.cameraContainer}>
         <CameraView
           onBarcodeScanned={scanned ? undefined : handleBarCodeScanned}
@@ -81,6 +82,11 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  text: {
+    fontSize: 50, 
+    fontWeight: 'bold',
+    marginBottom: 40,
   },
   cameraContainer: {
     width: cameraSize,
