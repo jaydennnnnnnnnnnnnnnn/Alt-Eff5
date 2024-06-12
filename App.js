@@ -11,6 +11,7 @@ import CartScreen from './src/screens/CartScreen';
 import OrderSuccessScreen from './src/screens/OrderSuccessScreen';
 import BusinessHomeScreen from './src/screens/BusinessHomeScreen';
 import BusinessOrdersScreen from './src/screens/BusinessOrdersScreen';
+import RewardsScreen from './src/screens/RewardsScreen.js';
 
 const Stack = createNativeStackNavigator();
 
@@ -21,11 +22,12 @@ export default function App() {
                 <Stack.Screen name='Login' component={LoginScreen} />
                 <Stack.Screen name='List' component={ListScreen} />
                 <Stack.Screen name='Home' component={HomeScreen} />
-                <Stack.Screen name='StoreInfo' component={StoreInfo} />
+                <Stack.Screen name='Store Info' component={StoreInfo} />
                 <Stack.Screen name='QRCodeScanner' component={QRCodeScanner} />
                 <Stack.Screen name='BusinessLogin' component={BusinessLoginScreen} />
                 <Stack.Screen name='Cart' component={CartScreen} />
-                <Stack.Screen name='OrderSuccess' component={OrderSuccessScreen} />
+                <Stack.Screen name='Rewards' component={RewardsScreen} />
+                <Stack.Screen name='Order Success' component={OrderSuccessScreen} />
                 <Stack.Screen name='BusinessHome' component={BusinessHomeScreen} />
                 <Stack.Screen name='QRCode' component={QRCodeScreen} />
                 <Stack.Screen name='BusinessOrders' component={BusinessOrdersScreen} />

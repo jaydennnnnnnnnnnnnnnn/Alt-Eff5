@@ -1,7 +1,18 @@
 import React from 'react';
-import { View, Text, ScrollView, Image, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, ScrollView, Image, TouchableOpacity, StyleSheet, Linking } from 'react-native';
 
 const GroceryScreen = ({ navigation }) => {
+
+    const openExternalUrl = async () => {
+        const url = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley';
+        const supported = await Linking.canOpenURL(url);
+        if (supported) {
+            await Linking.openURL(url);
+        } else {
+            console.log("Don't know how to open URI: " + url);
+        }
+    };
+
     return (
         <ScrollView>
             <View style={styles.container}>
@@ -16,14 +27,14 @@ const GroceryScreen = ({ navigation }) => {
 
                 {/* Buttons */}
 
-                <View style={styles.buttonsContainer}>
-                    <TouchableOpacity style={styles.button}>
-                        <Text style={styles.buttonText}>Go to Website</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity onPress={() => navigation.navigate('QRCodeScanner')} style={styles.button}>
-                        <Text style={styles.buttonText}>Select this Store</Text>
-                    </TouchableOpacity>
-                </View>
+            <View style={styles.buttonsContainer}>
+                <TouchableOpacity onPress={openExternalUrl} style={styles.button}>
+                    <Text style={styles.buttonText}>Go to Website</Text>
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => navigation.navigate('QRCodeScanner')} style={styles.button}>
+                    <Text style={styles.buttonText}>Select this Store</Text>
+                </TouchableOpacity>
+            </View>
 
                 {/* Paragraph */}
                 <Text style={styles.paragraph}>
@@ -45,6 +56,7 @@ const GroceryScreen = ({ navigation }) => {
 
 const styles = StyleSheet.create({
     container: {
+        marginTop: 20,
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
@@ -54,7 +66,7 @@ const styles = StyleSheet.create({
         textAlign: 'left',
         fontSize: 24,
         fontWeight: 'bold',
-        marginBottom: 30,
+        marginBottom: 20,
         width: '80%',
     },
     image: {

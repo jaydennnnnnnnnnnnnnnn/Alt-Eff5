@@ -1,0 +1,65 @@
+{
+    "rewards": [
+      {
+        "name": "10% Discount",
+        "description": "Get a 10% discount on your next purchase.",
+        "ecoCreditsRequired": 100
+      },
+      {
+        "name": "Free Shipping",
+        "description": "Enjoy free shipping on your next order.",
+        "ecoCreditsRequired": 200
+      },
+      {
+        "name": "Plant a Tree",
+        "description": "We'll plant a tree in your name.",
+        "ecoCreditsRequired": 300
+      },
+      {
+        "name": "Reusable Tote Bag",
+        "description": "Receive a stylish reusable tote bag.",
+        "ecoCreditsRequired": 150
+      },
+      {
+        "name": "Eco-Friendly Water Bottle",
+        "description": "Get a durable and eco-friendly water bottle.",
+        "ecoCreditsRequired": 250
+      },
+      {
+        "name": "Gift Card $10",
+        "description": "Receive a $10 gift card for your next purchase.",
+        "ecoCreditsRequired": 400
+      },
+      {
+        "name": "VIP Customer Support",
+        "description": "Get priority support for any issues or inquiries.",
+        "ecoCreditsRequired": 350
+      },
+      {
+        "name": "Donate $5 to Environmental Charity",
+        "description": "Donate $5 to a charity supporting environmental causes.",
+        "ecoCreditsRequired": 200
+      },
+      {
+        "name": "Exclusive Product Preview",
+        "description": "Get early access to new products before they're released.",
+        "ecoCreditsRequired": 500
+      },
+      {
+        "name": "Customizable Eco-Mug",
+        "description": "Receive a customizable eco-friendly mug.",
+        "ecoCreditsRequired": 300
+      },
+      {
+        "name": "Online Workshop Access",
+        "description": "Access an online workshop on sustainable living.",
+        "ecoCreditsRequired": 400
+      },
+      {
+        "name": "1 Month Premium Membership",
+        "description": "Enjoy one month of premium membership benefits.",
+        "ecoCreditsRequired": 600
+      }
+    ]
+  }
+  
