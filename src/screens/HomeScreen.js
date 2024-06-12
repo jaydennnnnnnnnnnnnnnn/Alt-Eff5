@@ -5,24 +5,30 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function HomeScreen() {
   const navigation = useNavigation();
-  const [ecoCredits, setecoCredits] = useState(0);
+  const [EcoCredits, setecoCredits] = useState(0);
 
-  const retrieveecoCredits = async () => {
+  const retrieveEcoCredits = async () => {
     try {
-      const value = await AsyncStorage.getItem('ecoCredits');
+      const value = await AsyncStorage.getItem('EcoCredits');
       if (value !== null) {
         setecoCredits(parseFloat(value));
       }
     } catch (error) {
-      console.error('Error retrieving ecoCredits:', error);
+      console.error('Error retrieving EcoCredits:', error);
     }
   };
 
   useEffect(() => {
-    const unsubscribe = navigation.addListener('focus', retrieveecoCredits);
-
+    const unsubscribe = navigation.addListener('focus', retrieveEcoCredits);
     return unsubscribe;
   }, [navigation]);
+
+  // Sample store locations
+  const stores = [
+    { name: 'Store A', location: 'Location A', coordinates: { x: '20%', y: '30%' } },
+    { name: 'Store B', location: 'Location B', coordinates: { x: '50%', y: '60%' } },
+    { name: 'Store C', location: 'Location C', coordinates: { x: '70%', y: '20%' } },
+  ];
 
   return (
     <View style={styles.container}>
@@ -38,43 +44,64 @@ export default function HomeScreen() {
         />
       </View>
 
-     <ScrollView> 
-      <Text style={styles.bodyText}>You have: {ecoCredits} ecoCredits</Text>
-      <Text style={styles.headerText}>Explore Now</Text>
-      <ScrollView horizontal={true} style={styles.scrollView}>
-        <TouchableOpacity onPress={() => navigation.navigate('List', { category: 'skincare' })} style={styles.thumbnailContainer}>
-          <Image
-            source={require('../../assets/Skincare.jpg')}
-            style={styles.thumbnailPic}
-          />
-          <Text style={styles.categoryText}>Skincare</Text>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate('List', { category: 'groceries' })} style={styles.thumbnailContainer}>
-          <Image
-            source={require('../../assets/Groceries.jpg')}
-            style={styles.thumbnailPic}
-          />
-          <Text style={styles.categoryText}>Groceries</Text>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate('List', { category: 'furniture' })} style={styles.thumbnailContainer}>
-          <Image
-            source={require('../../assets/Furniture.jpeg')}
-            style={styles.thumbnailPic}
-          />
-          <Text style={styles.categoryText}>Furniture</Text>
-        </TouchableOpacity>
-      </ScrollView>
+      <ScrollView>
+        <Text style={styles.bodyText}>You have: {EcoCredits} EcoCredits</Text>
+        <Text style={styles.headerText}>Explore Now</Text>
+        <ScrollView horizontal={true} style={styles.scrollView}>
+          <TouchableOpacity onPress={() => navigation.navigate('List', { category: 'skincare' })} style={styles.thumbnailContainer}>
+            <Image
+              source={require('../../assets/Skincare.jpg')}
+              style={styles.thumbnailPic}
+            />
+            <Text style={styles.categoryText}>Skincare</Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate('List', { category: 'groceries' })} style={styles.thumbnailContainer}>
+            <Image
+              source={require('../../assets/Groceries.jpg')}
+              style={styles.thumbnailPic}
+            />
+            <Text style={styles.categoryText}>Groceries</Text>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate('List', { category: 'furniture' })} style={styles.thumbnailContainer}>
+            <Image
+              source={require('../../assets/Furniture.jpeg')}
+              style={styles.thumbnailPic}
+            />
+            <Text style={styles.categoryText}>Furniture</Text>
+          </TouchableOpacity>
+        </ScrollView>
 
-      <Text style={styles.headerText}>What's Trending</Text>
-      <Image
-        source={require('../../assets/whatstrending.jpg')}
-        style={styles.trendingPic}
-      />
-      <Text style={styles.categoryText}>The Hottest New Green Grocery Store!</Text>
-      <Text style={styles.bodyText}>
-        In the bustling landscape of consumerism, a new player has emerged, promising not just quality groceries but also a commitment to sustainability. GreenStorage is the latest addition to the market, offering a refreshing alternative to traditional supermarkets...
-      </Text>
+        <Text style={styles.headerText}>Stores Near You</Text>
+        <View style={styles.mapContainer}>
+          <Image
+            source={require('../../assets/nearmap.png')}
+            style={styles.mapImage}
+          />
+          {stores.map((store, index) => (
+            <TouchableOpacity
+              key={index}
+              style={[styles.pinpoint, { left: store.coordinates.x, top: store.coordinates.y }]}
+              onPress={() => navigation.navigate('Store Info', { store })}
+            >
+              <Image
+                source={require('../../assets/pinpoint.png')}
+                style={styles.pinpointIcon}
+              />
+            </TouchableOpacity>
+          ))}
+        </View>
+
+        <Text style={styles.headerText}>What's Trending</Text>
+        <Image
+          source={require('../../assets/whatstrending.jpg')}
+          style={styles.trendingPic}
+        />
+        <Text style={styles.categoryText}>The Hottest New Green Grocery Store!</Text>
+        <Text style={styles.bodyText}>
+          In the bustling landscape of consumerism, a new player has emerged, promising not just quality groceries but also a commitment to sustainability. GreenStorage is the latest addition to the market, offering a refreshing alternative to traditional supermarkets...
+        </Text>
       </ScrollView>
+      
       <View style={styles.toolbar}>
         <TouchableOpacity onPress={() => navigation.navigate('QRCodeScanner')}>
           <View style={styles.circle}>
@@ -94,13 +121,13 @@ export default function HomeScreen() {
           </View>
         </TouchableOpacity>
         <View style={styles.horizontalLine}></View>
-        <TouchableOpacity onPress={() => navigation.navigate('List', { category: 'rewards' })}>
-        <View style={styles.circle}>
-          <Image
-            source={require('../../assets/rewards.png')}
-            style={styles.circularButton}
-          />
-        </View>
+        <TouchableOpacity onPress={() => navigation.navigate('Rewards')}>
+          <View style={styles.circle}>
+            <Image
+              source={require('../../assets/rewards.png')}
+              style={styles.circularButton}
+            />
+          </View>
         </TouchableOpacity>
       </View>
     </View>
@@ -140,16 +167,16 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   scrollView: {
-    marginBottom: 10,
-    marginTop: 10,
+    marginBottom: 0,
+    marginTop: 0,
   },
   thumbnailContainer: {
     marginRight: 20,
-    marginBottom: 30,
+    marginBottom: 0,
   },
   thumbnailPic: {
-    width: 200,
-    height: 150,
+    width: 350,
+    height: 200,
     marginBottom: 10,
   },
   trendingPic: {
@@ -162,6 +189,21 @@ const styles = StyleSheet.create({
   categoryText: {
     fontSize: 20,
     marginBottom: 10,
+  },
+  mapContainer: {
+    position: 'relative',
+    marginBottom: 20,
+  },
+  mapImage: {
+    width: '100%',
+    height: 300,
+  },
+  pinpoint: {
+    position: 'absolute',
+  },
+  pinpointIcon: {
+    width: 40,
+    height: 40,
   },
   toolbar: {
     flexDirection: 'row',
